@@ -5,7 +5,15 @@
 
 
 function containsWord(sentence, word) {
-    //code ici
+
+    if (sentence.includes(word)){
+
+        return "true"
+
+}
+    else{
+    return "false"
+}
 }
 
 // Exemple d'utilisation

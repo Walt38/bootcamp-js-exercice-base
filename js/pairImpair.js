@@ -5,9 +5,17 @@
 
 
 function isEven(number) {
-    // code ici
+
+    if (number % 2 === 0) {
+        return true;
+    }
+
+    else {
+        return false;
+    }
 }
+
 
 // Exemple d'utilisation
 console.log(isEven(4)); // true
-console.log(isEven(7)); // false
+console.log(isEven(11)); // false

@@ -5,9 +5,29 @@
 
 
 function isPalindrome(str) {
-    // code ici
+
+
+    // comparer la premiere lettre avec la derniere
+    //creer une boucle qui va comparer la lettre +1 avec -1
+
+
+    let debut = 0;
+    let fin = str.length - 1;
+
+    while (debut < fin) {
+
+        if (str.length[debut] !== str.length[fin]) {
+            return false;
+        }
+        debut++;
+        fin--;
+    }
+
+    return true;
+
 }
 
 // Exemple d'utilisation
 console.log(isPalindrome("radar")); // true
 console.log(isPalindrome("javascript")); // false
+console.log(isPalindrome("javasvajas")); // false

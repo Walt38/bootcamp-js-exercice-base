@@ -4,7 +4,21 @@
  **/
 
 function countOccurrences(str, char) {
-    //code ici
+
+//parcourir la chaine (boucle)
+
+    let count = 0;                              // declaration du compteur à 0
+    let Lowerstr = str.toLowerCase();           // Mettre str en minuscule
+    let Lowerchar = char.toLowerCase();         // Mettre char en minuscule
+
+    for(let i=0 ;i < Lowerstr.length; i++){     // Declare i egale 0 ; si i est plus petit que la chaine de charactere on incremente de 1
+        if (Lowerstr[i] === Lowerchar){         // si str de i est strictement egale à char on incremente count de 1
+            count +=1;                          // incremente de 1 à chaque fois que [i] est trouvé
+        }
+
+    }
+//compteur de caracter match
+return count;                                   // afficher le resultat
 }
 
 // Exemple d'utilisation

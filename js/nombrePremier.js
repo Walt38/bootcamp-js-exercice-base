@@ -6,9 +6,16 @@
 
 
 function isPrime(number) {
-    //code ici
+
+    for(let i = 2; i < number; i++)
+        if(number%i === 0) 
+        return false;
+        else{
+            number >1
+        return true;
+        }
 }
 
 // Exemple d'utilisation
-console.log(isPrime(5)); // true
+console.log(isPrime(7)); // true
 console.log(isPrime(10)); // false
